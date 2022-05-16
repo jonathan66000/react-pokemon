@@ -12,15 +12,15 @@ const App: FunctionComponent = () => {
             {/*la barre de navigation commun à toutes les pages*/}
             <nav>
                 <div className='nav-wrapper teal'>
-                    <link as="/" className='brand-logo center'>Pokédex</link>
+                    <Link to="/" className='brand-logo center'>Pokédex</Link>
                 </div>
             </nav>
             {/*le systeme de gestion des routes de notre application*/}
-            <switch>
+            <Switch>
                 <Route exact path="/" component={PokemonList}/>
                 <Route exact path="/pokemons" component={PokemonList}/>
                 <Route exact path="/pokemons/:id" component={PokemonDetail}/>
-            </switch> 
+            </Switch> 
         </div>
     </Router>
      )

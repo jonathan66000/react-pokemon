@@ -1,4 +1,3 @@
-import { type } from 'os';
 import React, { FunctionComponent, useState } from 'react';
 import Pokemon from '../models/pokemon';
 import './pokemon-card.css';
@@ -24,7 +23,7 @@ const PokemonCard: FunctionComponent<Props> = ({pokemon, borderColor = '#009688'
   }
 
   const  gotoPokemon = (id: number) => {
-    history.push('/pokemons/${id}');
+    history.push(`/pokemons/${id}`);
   }
 
   return (
