@@ -1,8 +1,8 @@
 import React, { FunctionComponent, useState } from 'react';
 import Pokemon from '../models/pokemon';
 import './pokemon-card.css';
-import formatDate from '../components/helpers/format-date';
-import formatType from '../components/helpers/format-type';
+import formatDate from '../helpers/format-date';
+import formatType from '../helpers/format-type';
 import { useHistory } from 'react-router-dom';
 
 type Props = {
